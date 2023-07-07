@@ -43,7 +43,12 @@ iOS 15.0
 
 ### 使用しているAPI,SDK,ライブラリなど
 - ホットペッパーグルメサーチAPI
-
+https://github.com/minge110123/PickResto-UIkit/blob/main/PickResto.xcodeproj/IMG_6617.PNG
 ### アドバイスして欲しいポイント
 飲食店の一覧リストを使いやすく、見やすくしたい。
 pickする時のアニメの作成方法。
+
+### 実行画像
+<img src="https://github.com/minge110123/PickResto-UIkit/blob/main/PickResto.xcodeproj/IMG_6617.PNG" width="30%" height="30%">
+<img src="https://github.com/minge110123/PickResto-UIkit/blob/main/PickResto.xcodeproj/IMG_6618.PNG" width="30%" height="30%">
+<img src="https://github.com/minge110123/PickResto-UIkit/blob/main/PickResto.xcodeproj/IMG_6619.PNG" width="30%" height="30%">
