@@ -13,6 +13,13 @@
 		B46CB8942A4D57A500AAD586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46CB8922A4D57A500AAD586 /* Main.storyboard */; };
 		B46CB8962A4D57A600AAD586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46CB8952A4D57A600AAD586 /* Assets.xcassets */; };
 		B46CB8992A4D57A600AAD586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46CB8972A4D57A600AAD586 /* LaunchScreen.storyboard */; };
+		B4728BA22A4E0208004DCE3B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4728BA12A4E0208004DCE3B /* Restaurant.swift */; };
+		B4728BA82A4E04BB004DCE3B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4728BA72A4E04BB004DCE3B /* LocationManager.swift */; };
+		B4728BAB2A4E0544004DCE3B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4728BAA2A4E0544004DCE3B /* CoreLocation.framework */; };
+		B4728C122A556327004DCE3B /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4728C112A556327004DCE3B /* RestaurantsTableViewController.swift */; };
+		B4728C142A556339004DCE3B /* RestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4728C132A556339004DCE3B /* RestoViewController.swift */; };
+		B4728C162A55634B004DCE3B /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4728C152A55634A004DCE3B /* RestaurantTableViewCell.swift */; };
+		B4DC40332A4D5960005DD809 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DC40322A4D5960005DD809 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		B46CB8952A4D57A600AAD586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46CB8982A4D57A600AAD586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B46CB89A2A4D57A600AAD586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4728BA12A4E0208004DCE3B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		B4728BA72A4E04BB004DCE3B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B4728BAA2A4E0544004DCE3B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B4728C112A556327004DCE3B /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		B4728C132A556339004DCE3B /* RestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoViewController.swift; sourceTree = "<group>"; };
+		B4728C152A55634A004DCE3B /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		B4DC40322A4D5960005DD809 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4728BAB2A4E0544004DCE3B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,7 @@
 			children = (
 				B46CB88B2A4D57A500AAD586 /* PickResto */,
 				B46CB88A2A4D57A500AAD586 /* Products */,
+				B4728BA92A4E0544004DCE3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +76,41 @@
 				B46CB88E2A4D57A500AAD586 /* SceneDelegate.swift */,
 				B46CB8902A4D57A500AAD586 /* ViewController.swift */,
 				B46CB8922A4D57A500AAD586 /* Main.storyboard */,
+				B4728C092A539FA3004DCE3B /* Controller */,
+				B4728C082A539F4D004DCE3B /* Model */,
 				B46CB8952A4D57A600AAD586 /* Assets.xcassets */,
 				B46CB8972A4D57A600AAD586 /* LaunchScreen.storyboard */,
 				B46CB89A2A4D57A600AAD586 /* Info.plist */,
 			);
 			path = PickResto;
+			sourceTree = "<group>";
+		};
+		B4728BA92A4E0544004DCE3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4728BAA2A4E0544004DCE3B /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4728C082A539F4D004DCE3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4728BA12A4E0208004DCE3B /* Restaurant.swift */,
+				B4728BA72A4E04BB004DCE3B /* LocationManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4728C092A539FA3004DCE3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4DC40322A4D5960005DD809 /* HomeViewController.swift */,
+				B4728C112A556327004DCE3B /* RestaurantsTableViewController.swift */,
+				B4728C152A55634A004DCE3B /* RestaurantTableViewCell.swift */,
+				B4728C132A556339004DCE3B /* RestoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46CB8912A4D57A500AAD586 /* ViewController.swift in Sources */,
+				B4728C122A556327004DCE3B /* RestaurantsTableViewController.swift in Sources */,
+				B4728BA82A4E04BB004DCE3B /* LocationManager.swift in Sources */,
 				B46CB88D2A4D57A500AAD586 /* AppDelegate.swift in Sources */,
+				B4728C142A556339004DCE3B /* RestoViewController.swift in Sources */,
 				B46CB88F2A4D57A500AAD586 /* SceneDelegate.swift in Sources */,
+				B4728BA22A4E0208004DCE3B /* Restaurant.swift in Sources */,
+				B4DC40332A4D5960005DD809 /* HomeViewController.swift in Sources */,
+				B4728C162A55634B004DCE3B /* RestaurantTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +342,13 @@
 				DEVELOPMENT_TEAM = L3JN6ASK5J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PickResto/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "find ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +372,13 @@
 				DEVELOPMENT_TEAM = L3JN6ASK5J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PickResto/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "find ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
